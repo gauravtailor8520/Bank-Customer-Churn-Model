@@ -8,23 +8,50 @@ We are going to use different technologies such as Python, Amazon Web Services (
 ## Architecture 
 <img src="Architecture.jpg">
 
-## Technology Used
-- Programming Language - Python
-- Amazon Web Service (AWS)
-1. S3 (Simple Storage Service)
-2. Athena
-3. Glue Crawler
-4. Glue Catalog
-5. EC2
-- Apache Kafka
+# 📈 Stock Market Kafka Real-Time Data Engineering Project
 
+## 📝 Introduction
+In this project, we will execute an end-to-end data engineering workflow on real-time stock market data using Kafka. The goal is to build a data pipeline capable of handling streaming data efficiently.
 
-## Dataset Used
-You can use any dataset, we are mainly interested in operation side of Data Engineering (building data pipeline) 
+## 🏗️ Architecture
+![Architecture](Architecture.jpg)
 
-Here is the dataset used in the video - https://github.com/darshilparmar/stock-market-kafka-data-engineering-project/blob/main/indexProcessed.csv
+## 🛠️ Technologies Used
+- **Programming Language:** Python
+- **Amazon Web Services (AWS)**
+  - S3 (Simple Storage Service)
+  - Athena
+  - Glue Crawler
+  - Glue Catalog
+  - EC2
+- **Apache Kafka**
 
+## 📊 Dataset Used
+Any stock market dataset can be used for this project, as the focus is on building the data pipeline rather than analyzing specific data. 
 
-## Complete Video Tutorial 
+## 🚀 Project Features
+- **Real-time data ingestion with Apache Kafka**
+- **Storage and processing using AWS services**
+- **ETL pipeline setup with Glue and Athena**
+- **Scalable and efficient architecture for handling high-volume data**
 
-Video Link - https://www.youtube.com/embed/KerNf0NANMo
+## 📌 Prerequisites
+- Basic knowledge of Python and SQL
+- Understanding of AWS services (S3, Athena, Glue, EC2)
+- Familiarity with Apache Kafka
+
+## 📂 Project Structure
+```plaintext
+📦 Stock Market Kafka Real-Time Data Engineering
+├── 📜 README.md
+├── 📂 Data Pipeline Scripts
+│   ├── producer.py  # Kafka Producer for Streaming Data
+│   ├── consumer.py  # Kafka Consumer for Processing Data
+│   ├── etl.py       # ETL Process using AWS Glue
+│   ├── query.sql    # SQL Queries for Athena
+├── 📂 Resources
+│   ├── Architecture.jpg  # Project Architecture Diagram
+│   ├── Configurations.txt  # Configuration Details
+└── 📂 Logs
+    ├── kafka_logs.log
+    ├── processing_logs.log
